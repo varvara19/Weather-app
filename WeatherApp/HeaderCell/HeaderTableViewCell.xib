@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderTableViewCell" rowHeight="176" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EJ-G6-hoe">
+                        <rect key="frame" x="10" y="10" width="372" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLX-Bx-DV9">
+                        <rect key="frame" x="30" y="83" width="332" height="66"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nom-iu-yGV">
+                        <rect key="frame" x="10" y="45" width="372" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9EJ-G6-hoe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3jy-LV-j7y"/>
+                    <constraint firstAttribute="trailing" secondItem="Nom-iu-yGV" secondAttribute="trailing" constant="10" id="4g2-qx-Szi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uLX-Bx-DV9" secondAttribute="trailing" constant="10" id="MFa-eP-8Pj"/>
+                    <constraint firstAttribute="trailing" secondItem="9EJ-G6-hoe" secondAttribute="trailing" constant="10" id="MK7-hl-twi"/>
+                    <constraint firstItem="Nom-iu-yGV" firstAttribute="top" secondItem="9EJ-G6-hoe" secondAttribute="bottom" constant="8" id="OiS-a5-f9U"/>
+                    <constraint firstItem="uLX-Bx-DV9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Qh1-4f-ZWt"/>
+                    <constraint firstItem="uLX-Bx-DV9" firstAttribute="top" secondItem="Nom-iu-yGV" secondAttribute="bottom" constant="17" id="o0z-qe-0qN"/>
+                    <constraint firstItem="9EJ-G6-hoe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uOE-Wc-RHn"/>
+                    <constraint firstItem="Nom-iu-yGV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zdK-ln-Y1v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityLabel" destination="9EJ-G6-hoe" id="0rG-aC-bpV"/>
+                <outlet property="tempLabel" destination="uLX-Bx-DV9" id="3ed-Jx-aeI"/>
+                <outlet property="weatherLabel" destination="Nom-iu-yGV" id="OhR-bL-r3u"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
